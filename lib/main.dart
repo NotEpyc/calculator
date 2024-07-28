@@ -166,7 +166,7 @@ class _CalculatorState extends State<Calculator> {
                     ),
                 )
               ),
-              // AC,  '%' , '/' , Backspace -> Row
+              // C,  '%' , '/' , Backspace -> Row
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -176,7 +176,7 @@ class _CalculatorState extends State<Calculator> {
                   (iconBuild(Icons.backspace))
                 ],
               ),
-              // 1,2,3,'*' -> Row
+              // 1,2,3,'x' -> Row
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
