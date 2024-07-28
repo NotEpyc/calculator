@@ -46,7 +46,7 @@ class _CalculatorState extends State<Calculator> {
           _display = _display.substring(0, _display.length - 1);
         }
       }
-       else if (buttonText == '+' || buttonText == '-' || buttonText == '*' || buttonText == '/' || buttonText == '%') {
+       else if (buttonText == '+' || buttonText == '-' || buttonText == 'x' || buttonText == '/' || buttonText == '%') {
         _display = _display.substring(0, _display.length) + buttonText;
         _isResultDisplayed = false;
         _num1 = double.parse(_input);
@@ -61,7 +61,7 @@ class _CalculatorState extends State<Calculator> {
           else if (_operation == '-') {
             _output = (_num1 - _num2).toString();
           } 
-          else if (_operation == '*') {
+          else if (_operation == 'x') {
             _output = (_num1 * _num2).toString();
           }
           else if (_operation == '/') {
@@ -90,7 +90,7 @@ class _CalculatorState extends State<Calculator> {
   }
 
   bool _isOperator(String value) {
-    return value == '+' || value == '-' || value == '*' || value == '/' || value == '%';
+    return value == '+' || value == '-' || value == 'x' || value == '/' || value == '%';
   }
 
   Widget buttonBuild(String buttonText) {
