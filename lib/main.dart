@@ -170,50 +170,35 @@ class _CalculatorState extends State<Calculator> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  (buttonBuild('C')),
-                  (buttonBuild('%')),
-                  (buttonBuild('/')),
-                  (iconBuild(Icons.backspace))
+                  (buttonBuild('C')), (buttonBuild('%')), (buttonBuild('/')), (iconBuild(Icons.backspace))
                 ],
               ),
               // 1,2,3,'x' -> Row
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  (buttonBuild('1')),
-                  (buttonBuild('2')),
-                  (buttonBuild('3')),
-                  (buttonBuild('x'))
+                  (buttonBuild('1')), (buttonBuild('2')), (buttonBuild('3')), (buttonBuild('x'))
                 ],
               ),
               // 4,5,6,'-' -> Row
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  (buttonBuild('4')),
-                  (buttonBuild('5')),
-                  (buttonBuild('6')),
-                  (buttonBuild('-'))
+                  (buttonBuild('4')), (buttonBuild('5')), (buttonBuild('6')), (buttonBuild('-'))
                 ],
               ),
               // 7,8,9,'+' -> Row
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  (buttonBuild('7')),
-                  (buttonBuild('8')),
-                  (buttonBuild('9')),
-                  (buttonBuild('+'))
+                  (buttonBuild('7')), (buttonBuild('8')), (buttonBuild('9')), (buttonBuild('+'))
                 ],
               ),
               //'+/-' , '.' , 0, '=' -> Row
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  (buttonBuild('0')),
-                  (buttonBuild('00')),
-                  (buttonBuild('.')),
-                  (buttonBuild('='))
+                  (buttonBuild('0')), (buttonBuild('00')), (buttonBuild('.')), (buttonBuild('='))
                 ],
               ),
             ],        
