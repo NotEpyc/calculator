@@ -26,7 +26,7 @@ class _CalculatorState extends State<Calculator> {
 
   void buttonPressed(String buttonText) {
     setState(() {
-      if (buttonText == 'AC') {
+      if (buttonText == 'C') {
         _input = '';
         _output = '';
         _operation = '';
