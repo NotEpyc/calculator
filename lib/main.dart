@@ -170,7 +170,7 @@ class _CalculatorState extends State<Calculator> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  (buttonBuild('AC')),
+                  (buttonBuild('C')),
                   (buttonBuild('%')),
                   (buttonBuild('/')),
                   (iconBuild(Icons.backspace))
@@ -183,7 +183,7 @@ class _CalculatorState extends State<Calculator> {
                   (buttonBuild('1')),
                   (buttonBuild('2')),
                   (buttonBuild('3')),
-                  (buttonBuild('*'))
+                  (buttonBuild('x'))
                 ],
               ),
               // 4,5,6,'-' -> Row
