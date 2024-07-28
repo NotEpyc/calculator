@@ -38,6 +38,7 @@ class _CalculatorState extends State<Calculator> {
       else if (_display.isNotEmpty && _isOperator(_display[_display.length - 1]) && _isOperator(buttonText)) {
         // Replace the last operator with the new one
         _display = _display.substring(0, _display.length - 1) + buttonText;
+        _operation = buttonText;
       }
       else if (buttonText == '⌫') {
         if (_input.isNotEmpty) {
@@ -54,10 +55,6 @@ class _CalculatorState extends State<Calculator> {
       }
       else if (buttonText == '=') {
         _num2 = double.parse(_input);
-        if(_input == '') {
-          _display = 'Syntax Error';
-        }
-        else {
           if (_operation == '+') {
             _output = (_num1 + _num2).toString();
           } 
@@ -77,7 +74,6 @@ class _CalculatorState extends State<Calculator> {
           _operation = '';
           _display = _output;
           _isResultDisplayed = true;
-        }
       }
       else {
         if (_isResultDisplayed) {
