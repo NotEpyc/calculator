@@ -3,9 +3,15 @@
 
 import 'package:flutter/material.dart';
 import 'package:calculator/home_page.dart';
+import 'package:flutter/services.dart';
 
 void main() {
-  runApp(const Calculator());
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp
+  ]).then((_) {
+    runApp(Calculator());
+  });
 }
 
 class Calculator extends StatelessWidget {
